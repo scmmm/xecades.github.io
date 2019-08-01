@@ -2,10 +2,10 @@ body {
   background: url("/images/background.jpg");
 }
 * {
-  cursor: url("/images/Normal.ani");
+  cursor: url("/images/Normal.ani"), auto !important;
 }
 :active {
-  cursor: url("/images/Link.ani");
+  cursor: url("/images/Link.ani"), auto !important;
 }
 /* ---------------------------------
  *       Override CSS Framework
