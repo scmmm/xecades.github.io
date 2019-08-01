@@ -7,19 +7,19 @@
 
 
 
-    <meta name="description" content="$$\mathfrak{XECADES}$$ $\mathfrak{\text{XDino}}$ $\mathtt{DRINK\space A\space CUP\space OF\space TEA}$ $\text{『优　放　鼓　微　载　泛　沦　淡　}$ $\text{　游　棹　檝　啸　浮　泛　胥　淡　}$ $\text{　卒　投　容　清　载　柏　而　流　}$ $\text{　岁　竿　裔　风">
+    <meta name="description" content="$$\mathfrak{XECADES}$$         var str1 = &apos;&amp;gt;Hello World!">
 <meta name="keywords" content="Xecades 信息学 博客 OI OIer">
 <meta property="og:type" content="website">
 <meta property="og:title" content="个人主页">
 <meta property="og:url" content="https://xecades.xyz/about/index.html">
 <meta property="og:site_name" content="Waterdrop">
-<meta property="og:description" content="$$\mathfrak{XECADES}$$ $\mathfrak{\text{XDino}}$ $\mathtt{DRINK\space A\space CUP\space OF\space TEA}$ $\text{『优　放　鼓　微　载　泛　沦　淡　}$ $\text{　游　棹　檝　啸　浮　泛　胥　淡　}$ $\text{　卒　投　容　清　载　柏　而　流　}$ $\text{　岁　竿　裔　风">
+<meta property="og:description" content="$$\mathfrak{XECADES}$$         var str1 = &apos;&amp;gt;Hello World!">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://xecades.xyz/images/og_image.png">
-<meta property="og:updated_time" content="2019-07-31T22:58:02.741Z">
+<meta property="og:updated_time" content="2019-08-01T04:58:19.131Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="个人主页">
-<meta name="twitter:description" content="$$\mathfrak{XECADES}$$ $\mathfrak{\text{XDino}}$ $\mathtt{DRINK\space A\space CUP\space OF\space TEA}$ $\text{『优　放　鼓　微　载　泛　沦　淡　}$ $\text{　游　棹　檝　啸　浮　泛　胥　淡　}$ $\text{　卒　投　容　清　载　柏　而　流　}$ $\text{　岁　竿　裔　风">
+<meta name="twitter:description" content="$$\mathfrak{XECADES}$$         var str1 = &apos;&amp;gt;Hello World!">
 <meta name="twitter:image" content="https://xecades.xyz/images/og_image.png">
 
 
@@ -159,15 +159,123 @@
             
         </h1>
         <div class="content">
-            <p>$$\mathfrak{XECADES}$$</p>
-<p><a href="https://www.luogu.org/space/show?uid=222045" target="_blank" rel="noopener"><center>$\mathfrak{\text{XDino}}$</center></a></p>
-<p><font color="aqua"><center>$\mathtt{DRINK\space A\space CUP\space OF\space TEA}$</center></font></p>
-<p><font color="#f4c400"><center>$\text{『优　放　鼓　微　载　泛　沦　淡　}$</center></font></p>
-<p><font color="#f4c400"><center>$\text{　游　棹　檝　啸　浮　泛　胥　淡　}$</center></font></p>
-<p><font color="#f4c400"><center>$\text{　卒　投　容　清　载　柏　而　流　}$</center></font></p>
-<p><font color="#f4c400"><center>$\text{　岁　竿　裔　风　滞　舟　逝　水　}$</center></font></p>
-<p><font color="#f4c400"><center>$\text{　。　，　。　，　。　，　。　，』}$</center></font></p>
+            <p><font size="6">$$\mathfrak{XECADES}$$</font></p>
+<center><font size="5" face="consolas" color="aqua"><div id="t1"></div></font></center>
+<center><font size="4" face="楷体" color="#f4c400"><div id="t2"></div></font></center>
+<center><font size="4" face="楷体" color="#f4c400"><div id="t3"></div></font></center>
+<center><font size="4" face="楷体" color="#f4c400"><div id="t4"></div></font></center>
+<center><font size="4" face="楷体" color="#f4c400"><div id="t5"></div></font></center>
+<center><font size="4" face="楷体" color="#f4c400"><div id="t6"></div></font></center>
 
+<script>
+var str1 = '>Hello World!<';
+var str2 = '『优　放　鼓　微　载　泛　沦　淡　';
+var str3 = '　游　棹　檝　啸　浮　泛　胥　淡　';
+var str4 = '　卒　投　容　清　载　柏　而　流　';
+var str5 = '　岁　竿　裔　风　滞　舟　逝　水　';
+var str6 = '　。　，　。　，　。　，　。　，』';
+
+var i1 = 0;
+var i2 = 17;
+var i3 = 17;
+var i4 = 17;
+var i5 = 17;
+var i6 = 17;
+
+function t1()
+{
+    var divTyping = document.getElementById('t1');
+    if (i1 <= str1.length)
+    {
+        divTyping.innerHTML = str1.slice(0, i1++) + '_';
+        if (str1.slice(i1-1, i1) <'z' && str1.slice(i1-1, i1)>'a')
+        {
+            setTimeout('t1()', 100);
+        }
+        else
+        {
+            setTimeout('t1()', 200);
+        }
+    }
+    else
+    {
+        divTyping.innerHTML = str1;
+    }
+}
+function t2()
+{
+    var divTyping = document.getElementById('t2');
+    if (i2 >= 0)
+    {
+        divTyping.innerHTML = '|' + str2.slice(i2--, str2.length);
+        setTimeout('t2()', 200);
+    }
+    else
+    {
+        divTyping.innerHTML = str2;
+    }
+}
+function t3()
+{
+    var divTyping = document.getElementById('t3');
+    if (i3 >= 0)
+    {
+        divTyping.innerHTML = '|' + str3.slice(i3--, str3.length);
+        setTimeout('t3()', 200);
+    }
+    else
+    {
+        divTyping.innerHTML = str3;
+    }
+}
+function t4()
+{
+    var divTyping = document.getElementById('t4');
+    if (i4 >= 0)
+    {
+        divTyping.innerHTML = '|' + str4.slice(i4--, str4.length);
+        setTimeout('t4()', 200);
+    }
+    else
+    {
+        divTyping.innerHTML = str4;
+    }
+}
+function t5()
+{
+    var divTyping = document.getElementById('t5');
+    if (i5 >= 0)
+    {
+        divTyping.innerHTML = '|' + str5.slice(i5--, str5.length);
+        setTimeout('t5()', 200);
+    }
+    else
+    {
+        divTyping.innerHTML = str5;
+    }
+}
+function t6()
+{
+    var divTyping = document.getElementById('t6');
+    if (i6 >= 0)
+    {
+        divTyping.innerHTML = '|' + str6.slice(i6--, str6.length);
+        setTimeout('t6()', 200);
+    }
+    else
+    {
+        divTyping.innerHTML = str6;
+    }
+}
+
+t1();
+t2();
+t3();
+t4();
+t5();
+t6();
+
+</script>
         </div>
         
         
@@ -283,7 +391,7 @@
         </nav>
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/Xecades" target="_blank">
-                SEGUIR</a>
+                Follow</a>
         </div>
         
         
