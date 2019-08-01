@@ -16,7 +16,7 @@
 <meta property="og:description" content="数论的笔记(写上博客是为了方便查阅) 打算以后加上密码">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://xecades.xyz/images/og_image.png">
-<meta property="og:updated_time" content="2019-07-31T04:51:14.892Z">
+<meta property="og:updated_time" content="2019-07-31T23:48:55.551Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数论-OwO的讲课笔记">
 <meta name="twitter:description" content="数论的笔记(写上博客是为了方便查阅) 打算以后加上密码">
@@ -165,7 +165,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    10 分钟 读完 (大约 1520 个字)
+                    12 分钟 读完 (大约 1819 个字)
                 </span>
                 
                 
@@ -233,7 +233,8 @@
 <p>注意到</p>
 <p>$$a\mod b=a-b\lfloor a/b\rfloor$$</p>
 <p>对上式变形得到</p>
-<p>$$\left{\begin{matrix}x=y’ \ y=x’-\lfloor a/b\rfloor y’\end{matrix}\right.$$</p>
+<center><a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\begin{array}&space;{l}&space;{x=y'}&space;\\&space;{y=x'-\lfloor&space;a&space;/&space;b\rfloor&space;y'}\end{array}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left\{\begin{array}&space;{l}&space;{x=y'}&space;\\&space;{y=x'-\lfloor&space;a&space;/&space;b\rfloor&space;y'}\end{array}\right." title="\left\{\begin{array} {l} {x=y'} \\ {y=x'-\lfloor a / b\rfloor y'}\end{array}\right."></a></center>
+
 <p>时间复杂度同欧几里得算法，也是$\Theta(\log_\varnothing a)$</p>
 <p>令$d:=\gcd(a,b)$</p>
 <p>如果要求$ax+by=c$的解，有贝祖定理$d\space|\space c$，将扩展欧几里得算法得到的解乘$c/d$即可</p>
@@ -243,20 +244,21 @@
 <p>即</p>
 <p>$$s=\frac{b}{a}t=\frac{b/d}{a/d}t$$</p>
 <p>也就是说通解为</p>
-<p>$$\left{\begin{matrix}x=x_0+\frac{b}{d}k \ y=y_0-\frac{a}{d}k\end{matrix}\right.(k\in \Z)$$</p>
+<center><a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\begin{array}&space;{l}&space;{x=x_{0}&plus;\frac{b}&space;{d}&space;k}&space;\\&space;{y=y_{0}-\frac{a}&space;{d}&space;k}\end{array}(k&space;\in&space;\mathbb{Z})\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left\{\begin{array}&space;{l}&space;{x=x_{0}&plus;\frac{b}&space;{d}&space;k}&space;\\&space;{y=y_{0}-\frac{a}&space;{d}&space;k}\end{array}(k&space;\in&space;\mathbb{Z})\right." title="\left\{\begin{array} {l} {x=x_{0}+\frac{b} {d} k} \\ {y=y_{0}-\frac{a} {d} k}\end{array}(k \in \mathbb{Z})\right."></a></center>
+
 <hr>
 <h1 id="同余"><a href="#同余" class="headerlink" title="同余"></a>同余</h1><p>若$a,b$ <del>膜</del> 模$m$的余数相同，则称$a$和$b$模$m$同于，记为</p>
 <p>$$a\equiv b(\mod m)$$</p>
 <p>$a\equiv b(\mod m)$的充要条件是$m\space|\space a-b$。</p>
 <p>若$a\equiv b(\mod m)$，则</p>
 <ul>
-<li>$a\plusmn c\equiv b\plusmn c(\mod m)$</li>
+<li>$a\pm c\equiv b\pm c(\mod m)$</li>
 <li>$ac\equiv bc(\mod m)$</li>
 <li>若$c\space|\space a$，$c\space|\space b$，则$a/c\equiv b/c(\mod m/gcd(m,c))$</li>
 </ul>
 <hr>
 <h2 id="同余方程"><a href="#同余方程" class="headerlink" title="同余方程"></a>同余方程</h2><p>形如$a\equiv b(\mod m)$的方程称为同余方程。</p>
-<p>根据同余的定义，同余方程等价于$ax+mt=b(t\in \Z)$，可以用扩展欧几里得算法求解。</p>
+<p>根据同余的定义，同余方程等价于$ax+mt=b(t\in\mathbb Z)$，可以用扩展欧几里得算法求解。</p>
 <p>同余方程有解的条件是$\gcd(a,m)\space|\space b$。</p>
 <hr>
 <h2 id="例题-1"><a href="#例题-1" class="headerlink" title="例题"></a>例题</h2><h3 id="mathtt-NOI2002-space-Savage"><a href="#mathtt-NOI2002-space-Savage" class="headerlink" title="$\mathtt{NOI2002:\space Savage}$"></a>$\mathtt{NOI2002:\space Savage}$</h3><blockquote>
@@ -268,7 +270,7 @@
 <p>与$\min{A_i,A_j}$比较一下</p>
 <p>$$C_i+P_ix\equiv c_j+P_jx(\mod M)$$</p>
 <hr>
-<h2 id="逆元"><a href="#逆元" class="headerlink" title="逆元"></a>逆元</h2><p>给定正整数$a$，若$\exist x$满足$ax\equiv 1(\mod m)$，则称$x$是$a$在模$m$下的逆元，记为$a^{-1}$。</p>
+<h2 id="逆元"><a href="#逆元" class="headerlink" title="逆元"></a>逆元</h2><p>给定正整数$a$，若$\exists x$满足$ax\equiv 1(\mod m)$，则称$x$是$a$在模$m$下的逆元，记为$a^{-1}$。</p>
 <p>由同余方程可知，逆元存在的条件是$\gcd(a,m)=1$。</p>
 <p>用反证法可以证明，逆元若存在则唯一。</p>
 <p>可以在$\Theta(n)$内求出$1$到$n$的所有数模素数$p$的逆元，要求$n&lt;p$。</p>
@@ -283,7 +285,8 @@
 <p>$$x^{-1}\equiv -ab^{-1}\equiv -\lfloor p/x\rfloor(p\mod x)^{-1}(\mod p)$$</p>
 <p>因为$p\mod x&lt;x$，所以其逆元已经算过了，可以按$x$从小到大的顺序递推。</p>
 <hr>
-<h2 id="同余方程组"><a href="#同余方程组" class="headerlink" title="同余方程组"></a>同余方程组</h2><p>$$\left{\begin{matrix}x\equiv a_1(\mod m_1) \ x\equiv a_2(\mod m_2)\end{matrix}\right.$$</p>
+<h2 id="同余方程组"><a href="#同余方程组" class="headerlink" title="同余方程组"></a>同余方程组</h2><center><a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\begin{matrix}x\equiv&space;a_1(\mod&space;m_1)&space;\\&space;x\equiv&space;a_2(\mod&space;m_2)\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left\{\begin{matrix}x\equiv&space;a_1(\mod&space;m_1)&space;\\&space;x\equiv&space;a_2(\mod&space;m_2)\end{matrix}\right." title="\left\{\begin{matrix}x\equiv a_1(\mod m_1) \\ x\equiv a_2(\mod m_2)\end{matrix}\right."></a></center>
+
 <p>设</p>
 <p>$$x=k_1m_1+a_1=k_2m_2+a_2$$</p>
 <p>用扩展欧几里得算法可以求出一组$(k_1,k_2)$，即可求出$x$。</p>
@@ -291,7 +294,8 @@
 <p>有多少个方程呢？注意到上面的过程实际上是将两个方程合并为了一个模$\mathbf{lcm}(m_1,m_2)$的方程。多个方程依次合并即可。</p>
 <hr>
 <h2 id="中国剩余定理"><a href="#中国剩余定理" class="headerlink" title="中国剩余定理"></a>中国剩余定理</h2><p>设$m_1,m_2,\dots,m_n$两两互质，则同余方程组</p>
-<p>$$\left{\begin{matrix}x\equiv a_1(\mod m_1) \ x\equiv a_2(\mod m_2) \ \vdots \ a\equiv a_n(\mod m_n)\end{matrix}\right.$$</p>
+<center><a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\begin{matrix}x\equiv&space;a_1(\mod&space;m_1)&space;\\&space;x\equiv&space;a_2(\mod&space;m_2)&space;\\&space;\vdots&space;\\&space;a\equiv&space;a_n(\mod&space;m_n)\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left\{\begin{matrix}x\equiv&space;a_1(\mod&space;m_1)&space;\\&space;x\equiv&space;a_2(\mod&space;m_2)&space;\\&space;\vdots&space;\\&space;a\equiv&space;a_n(\mod&space;m_n)\end{matrix}\right." title="\left\{\begin{matrix}x\equiv a_1(\mod m_1) \\ x\equiv a_2(\mod m_2) \\ \vdots \\ a\equiv a_n(\mod m_n)\end{matrix}\right."></a></center>
+
 <p>在模$M=\prod m_i$下有唯一解</p>
 <p>$$x\equiv\sum a_i t_i M_i(\mod M)$$</p>
 <p>其中$M_i=M/m_i$，$t_i$为$M_i$在模$m_i$下的逆元。</p>
@@ -510,7 +514,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            链接
+            链接 &amp; 友链
         </h3>
         <ul class="menu-list">
         
@@ -532,6 +536,28 @@
                     </span>
                     <span class="level-right">
                         <span class="level-item tag">www.luogu.org</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://decorationqwq.com/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">DecoBlog</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">decorationqwq.com</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.qq.org/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">CyxBlog</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.qq.org</span>
                     </span>
                 </a>
             </li>
